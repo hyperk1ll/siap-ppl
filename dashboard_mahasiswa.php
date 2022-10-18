@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard</title>
+  <title>Akademi Unggulan</title>
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -30,138 +30,15 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="dashboard_mahasiswa.html" class="logo d-flex align-items-center">
-        <span class="d-none d-lg-block">Akademi Unggulan</span>
-      </a>
-    </div><!-- End Logo -->
-
-   
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        <!-- Notification -->
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a><!-- End Notification Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
-
-          </ul><!-- End Notification Dropdown Items -->
-
-        </li>
-
-        <li class="nav-item dropdown pe-3">
-
-          <!-- Foto Profil di Header -->
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/img_avatar.png" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Sadira Taruna Calvindoro</span>
-          </a><!-- End Profile Iamge Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>Profil Saya</span>
-              </a>
-            </li>
-            
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Log Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
-      </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
-
+  <!-- Header -->
+  <?php include("./header.php"); ?>
   
   <main id="main" class="main">
     <div class="pagetitle">
       <h1>Dasbor</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="dashboard_mahasiswa.html"><b>Home</b></a></li>
+          <li class="breadcrumb-item"><a href="dashboard_mahasiswa.php"><b>Home</b></a></li>
           <li class="breadcrumb-item">Dasbor</li>
         </ol>
       </nav>
@@ -242,28 +119,25 @@
                         197601102009122002) 
                     </div>
                   </div><br>
-                  <ul class="list-inline text-center justify-content-center">
-                    <li class="list-inline-item ">
+                  <ul class="list-inline text-center justify-content-center" >
+                    <li class="list-inline-item px-5" style="border-right: 1px solid rgb(185, 185, 185);">
                       <span class="text-muted">Angkatan</span>
                       <span class="border-right-1"></span>
                       <h3 class="block">20XX</h3>
                     </li>
-                    &nbsp;
-                    &nbsp;
-                    <li class="list-inline-item">
+
+                    <li class="list-inline-item px-5" style="border-right: 1px solid rgb(185, 185, 185);">
                       <span class="text-muted">Semester Studi</span>
                       <h3 class="block">X</h3>
                     </li>
-                    &nbsp;
-                    &nbsp;
+
                     <li class="list-inline-item pl-2">
                       <span class="text-muted">Status Akademik</span>
                       <h3 class="block">
                         <span class="badge bg-secondary">AKTIF</span>
                       </h3>
                     </li>
-                    &nbsp;
-                    &nbsp;
+
                   </ul>
                 </div>
               </div>
@@ -314,23 +188,23 @@
                   </div>
                 </div><!-- Entry IRS Card -->
 
-                <!-- Modal -->
+                <!-- Modal Entry Pengambilan IRS -->
                 <div class="modal fade" id="entryIRS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <form action="" method="POST">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Entry IRS</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Entry Pengambilan IRS</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         <div class="mb-3">
-                          <label for="formFile" class="form-label">Upload Screenshot IRS yang diambil semester ini</label>
+                          <label for="formFile" class="form-label">Upload IRS yang diambil semester ini</label>
                           <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="" style="font-size: 10px;">
-                          <div>Format: .jpg, .jpeg, .png</div>
-                          <div>Max file size: 500kb</div>
+                        <div class="" style="font-size: 15px;">
+                          <div>Format: .pdf</div>
+                          <div>Max file size: 512kb</div>
                         </div><br>
                         <div class="form-group">
                           Jumlah SKS yang diambil
@@ -349,9 +223,42 @@
                   </div>
                 </div>
               
-            
+            <!-- Modal Entry Hasil KHS -->
+            <div class="modal fade" id="entryKHS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form action="" method="POST">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entry Hasil KHS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Upload KHS semester ini</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="" style="font-size: 15px;">
+                      <div>Format: .pdf</div>
+                      <div>Max file size: 512kb</div>
+                    </div><br>
+                    <div class="form-group">
+                      Jumlah SKS yang diambil
+                      <div class="col-md-2">
+                        <style>input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}</style>
+                        <input type="number" onkeydown="return event.keyCode !== 69" id="jumlahSKS" class="form-control someInput" placeholder="" min="0" max="24" aria-label="Email" aria-describedby="basic-addon1">
+                     </div>      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
 
-            <!-- Entry KHS Card -->
+            <!-- Entry PKL Card -->
             <div class="col-md-6">
               <div class="card info-card sales-card">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#entryPKL" style="border: none; background-color: white;">
@@ -373,6 +280,34 @@
               </button>
               </div>
             </div><!-- Entry KHS Card -->
+            </div>
+
+            <!-- Modal Entry Progress PKL -->
+            <div class="modal fade" id="entryPKL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form action="" method="POST">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entry Progress PKL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Upload File Progress PKL Anda</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="" style="font-size: 15px;">
+                      <div>Format: .pdf</div>
+                      <div>Max file size: 512kb</div>
+                    </div><br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
             </div>
 
             
@@ -426,6 +361,48 @@
               </button>
             </div>
             </div><!-- Entry Skripsi Card -->
+
+
+            <!-- Modal Entry Skripsi -->
+            <div class="modal fade" id="entrySkripsi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form action="" method="POST">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entry Skripsi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Upload File Skripsi Anda</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="" style="font-size: 15px;">
+                      <div>Format: .pdf</div>
+                      <div>Max file size: 512kb</div>
+                    </div><br>
+                    <div class="form-group">
+                      Tanggal Lulus
+                      <div class="col-md-2">
+                        <input type="date" id="datePicker" value="" />
+                     </div>      
+                    </div>
+                    <div class="form-group py-2">
+                      Lama Studi (Jumlah Semester)
+                      <div class="col-md-2">
+                        <style>input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}</style>
+                        <input type="number" onkeydown="return event.keyCode !== 69" id="LamaStudi" class="form-control someInput" placeholder="" min="0" max="15" aria-label="Semester" aria-describedby="basic-addon1">
+                     </div>      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
 
           
             </div>
@@ -484,10 +461,7 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-  </footer><!-- End Footer -->
+  <?php include("./footer.php"); ?>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
