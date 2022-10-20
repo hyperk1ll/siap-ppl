@@ -36,7 +36,6 @@
         let itemJenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
 
         $('#tabledata tr:last').after(`<tr><td>${itemNIM}</td><td>${itemNama}</td><td>${itemAngkatan}</td><td>${itemJenisKelamin}</td><td></td><td></td><td>Belum</td><td>Belum</td><td><button type="button" class="btn btn-warning btn-sm disabled" style="font-size: 10px;"><b>Belum Disetujui</b></button><button type="button" class="btn btn-success" style="font-size: 15px;">Setujui</button></td><td><button type="button" class="btn btn-info">Edit</button></td></tr>`);
-    
     }
   </script>
 
@@ -135,6 +134,7 @@
                                     <col span="1" style="width: 10%;">
                                     <col span="1" style="width: 10%;">
                                     <col span="1" style="width: 18%;">
+                                    <col span="1" style="width: 10%;">
 
                                 </colgroup>
 
@@ -149,17 +149,19 @@
                                         <th scope="col">Status PKL</th>
                                         <th scope="col">Status Skripsi</th>
                                         <th scope="col">Status</th>
+                                        <th scope="col">Edit</th>
                                     </tr>
                                     <tr>
                                         <td>24060120140171</td>
                                         <td>Muhammad Hilmy Tsany</td>
                                         <td>2020</td>
                                         <td>Pria</td>
-                                        <td><button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button></td>       <!-- IRS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
-                                        <td><button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button></td>       <!-- KHS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
+                                        <td></td>       <!-- IRS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
+                                        <td></td>       <!-- KHS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
                                         <td>Belum</td>
                                         <td>Selesai <button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button> </td>
                                         <td><button type="button" class="btn btn-warning btn-sm disabled" style="font-size: 10px;"><b>Belum Disetujui</b></button><button type="button" class="btn btn-success" style="font-size: 15px;">Setujui</button></td>
+                                        <td><button type="button" class="btn btn-info">Edit</button></td>
                                     </tr>
                                 </tbody>
                             </table>

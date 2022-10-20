@@ -312,3 +312,35 @@
   }
 
 })();
+
+
+
+function add() {
+    let itemNIM = document.getElementById("formNIM").value;
+    let itemNama = document.getElementById("formNama").value;
+    let itemAngkatan = document.getElementById("formAngkatan").value;
+    let itemJenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
+
+    $('#tabledata tr:first').after(`<tr><td>${itemNIM}</td><td>${itemNama}</td><td>${itemAngkatan}</td><td>${itemJenisKelamin}</td><td>Belum</td><td>Belum</td><td>Belum</td><td>Belum</td><td>Edit</td></tr>`);
+
+
+    // Find a <table> element with id="list":
+    var table = document.getElementById("tabledata");
+
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    var row = table.insertRow(0);
+
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+
+    // Add some text to the new cells:
+    cell1.innerHTML = itemNIM;
+    cell2.innerHTML = itemNama;
+    cell3.innerHTML = itemAngkatan;
+    cell4.innerHTML = itemJenisKelamin;
+
+    
+}
