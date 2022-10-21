@@ -67,9 +67,12 @@
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Please enter your password!</div>
+                    <label for="yourPassword" class="form-label">Password</label>
+                      <div class="input-group">
+                        <span class="input-group-text" style="padding-bottom:16px;"><i class="fa-solid fa-key fa-sm" style="margin-left:1px;margin-top:15px;color:black;"></i></span>
+                        <input type="password" class="form-control rounded-end" id="yourPassword" name="password" required>
+                        <div class="invalid-feedback">Please enter your password!</div>
+                      </div>
                     </div>
 
                     <div class="col-12">
