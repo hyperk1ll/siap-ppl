@@ -50,7 +50,7 @@
       <h1>Master Data</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="dashboard_doswal.php"><b>Home</b></a></li>
+          <li class="breadcrumb-item"><a href="dashboard_operator.php"><b>Home</b></a></li>
           <li class="breadcrumb-item">Dasbor</li>
           <li class="breadcrumb-item">Master Data</li>
         </ol>

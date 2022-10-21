@@ -169,7 +169,7 @@
                 <!-- Entry IRS Card -->
                 <div class="col-md-6">
                   <div class="card info-card sales-card">
-                  <a href="master_data.php"><button type="button" style="border: none; background-color: white;">
+                  <a href="data_mahasiswa_perwalian.php"><button type="button" style="border: none; background-color: white;">
                     <div class="card-body">
                       <h5 class="card-title"><span></span></h5>
 
@@ -178,7 +178,7 @@
                           <i class="bi bi-pencil-square"></i>
                         </div>
                         <div class=" text-center justify-content-center">
-                          <h6>MASTER DATA MAHASISWA</h6>
+                          <h6>Data Mahasiswa Perwalian</h6>
                           <!-- <span class="text-success small pt-1 fw-bold"><i class="bi bi-check-circle"></i> </span> <span class="text-muted small pt-2 ps-1">Sudah Entry</span> -->
 
                         </div>

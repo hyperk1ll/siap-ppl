@@ -70,56 +70,6 @@
                                     <div class="col-3 px-4">
                                         <h5>Data Mahasiswa</h5>
                                     </div>
-                                    <div class="col-9">
-                                        <!-- Tambah Data hanya buat demoin aja, dalam kasus nyata data mahasiswa diinput oleh admin -->
-                                        <button type="button" class="btn btn-primary float-end" style="float: right;" data-bs-toggle="modal" data-bs-target="#tambahData">Tambah Data</button>
-                                    
-                                        <!-- Modal Tambah Data -->
-                                        <div class="modal fade" id="tambahData" tabindex="-1" aria-labelledby="tambahDataLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <form action="" method="POST">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="tambahDataLabel">Tambah Data Mahasiswa</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="mb-3">
-                                                            <label for="formNIM" class="form-label">NIM</label>
-                                                            <input class="form-control" type="text" id="formNIM">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="formNama" class="form-label">Nama</label>
-                                                            <input class="form-control" type="text" id="formNama">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="formAngkatan" class="form-label">Angkatan</label>
-                                                            <input class="form-control" type="number" id="formAngkatan" maxlength="4">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="formJenisKelamin" class="form-label">Jenis Kelamin</label>
-                                                            <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" id="pria-check" class="form-check-input" name="jenis_kelamin" value="Pria">Pria
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input type="radio" id="wanita-check" class="form-check-input" name="jenis_kelamin" value="Wanita">Wanita
-                                                            </label>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="add_row();">Simpan</button>
-                                                    </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -156,7 +106,7 @@
                                         <td>2020</td>
                                         <td>Pria</td>
                                         <td><button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button></td>       <!-- IRS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
-                                        <td><button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button></td>       <!-- KHS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
+                                        <td><a href="https://drive.google.com/file/d/1RTq6aOdw45n2hb6GOml8h1aMxtAyb3hN/view?usp=sharing" target="_blank"><button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button></a></td>       <!-- KHS conditional kalo belom ada kosongin, kalo ada kasih tombol lihat -->
                                         <td>Belum</td>
                                         <td>Selesai <button type="button" class="btn btn-info" style="font-size: 12px;">Lihat</button> </td>
                                         <td><button type="button" class="btn btn-warning btn-sm disabled" style="font-size: 10px;"><b>Belum Disetujui</b></button><button type="button" class="btn btn-success" style="font-size: 15px;">Setujui</button></td>

@@ -1,0 +1,26 @@
+Table Mahasiswa 
+
+IRS
+-File
+-Jumlah SKS
+----> Increment Semester 
+
+KHS
+-File
+-Jumlah SKS
+----> Increment Semester
+
+Minimal Semester 5 PKL Kebuka
+
+PKL
+-File
+
+Minimal Semester 7 Skripsi Kebuka
+
+Skripsi
+-File
+-Tanggal Lulus
+-Lama Studi
+
+
+SELECT * from mahasiswa WHERE
