@@ -29,15 +29,18 @@
 
   <script>
     // entah kenapa script di external gabisa
-    function add_row() {
-        let itemNIM = document.getElementById("formNIM").value;
-        let itemNama = document.getElementById("formNama").value;
-        let itemAngkatan = document.getElementById("formAngkatan").value;
-        let itemJenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
-
-        $('#tabledata tr:last').after(`<tr><td>${itemNIM}</td><td>${itemNama}</td><td>${itemAngkatan}</td><td>${itemJenisKelamin}</td><td></td><td></td><td>Belum</td><td>Belum</td><td><button type="button" class="btn btn-warning btn-sm disabled" style="font-size: 10px;"><b>Belum Disetujui</b></button><button type="button" class="btn btn-success" style="font-size: 15px;">Setujui</button></td><td><button type="button" class="btn btn-info">Edit</button></td></tr>`);
-    
+    function showGenre(item) {
+        document.getElementById("dropdownMenuButton1").innerHTML = "Angkatan " + item.innerHTML;
+        document.getElementById("totalMHSAngkatan").innerHTML = "Total Status Mahasiswa Skripsi Angkatan "  + item.innerHTML + ":";
+        document.getElementById("totalStatusMHS").style.display = "block";
     }
+
+    function showGenre2(item) {
+        document.getElementById("dropdownMenuButton1").innerHTML = item.innerHTML;
+        document.getElementById("totalMHSAngkatan").innerHTML = "Total Status Mahasiswa Skripsi "  + item.innerHTML + ":";
+        document.getElementById("totalStatusMHS").style.display = "block";
+    }
+
   </script>
 
 </head>
@@ -76,11 +79,12 @@
                                                 Angkatan
                                             </button>
                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a class="dropdown-item" href="#">2016</a></li>
-                                                <li><a class="dropdown-item" href="#">2017</a></li>
-                                                <li><a class="dropdown-item" href="#">2018</a></li>
-                                                <li><a class="dropdown-item" href="#">2019</a></li>
-                                                <li><a class="dropdown-item" href="#">2020</a></li>
+                                                <li><a class="dropdown-item" id="2016" onclick="showGenre(this)">2016</a></li>
+                                                <li><a class="dropdown-item" id="2017" onclick="showGenre(this)">2017</a></li>
+                                                <li><a class="dropdown-item" id="2018" onclick="showGenre(this)">2018</a></li>
+                                                <li><a class="dropdown-item" id="2019" onclick="showGenre(this)">2019</a></li>
+                                                <li><a class="dropdown-item" id="2020" onclick="showGenre(this)">2020</a></li>
+                                                <li><a class="dropdown-item" id="allAng" onclick="showGenre2(this)">Semua Angkatan</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -126,6 +130,17 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="recap_footer">
+                                <b id="totalMHSAngkatan"></b>
+                                <div id="totalStatusMHS" style="display: none;">
+                                <ul>
+                                    <li>Belum: <?php echo 2 ?></li>
+                                    <li>Proses: <?php echo 13 ?></li>
+                                    <li>Selesai: 0</li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div style="float: right;"><a href="rekap_mahasiswa_Skripsi.php" style="text-decoration: underline;">Lihat Rekap Semua Angkatan</a></div>
                         </div>
                     </div>
                 </div>
