@@ -29,15 +29,18 @@
 
   <script>
     // entah kenapa script di external gabisa
-    function add_row() {
-        let itemNIM = document.getElementById("formNIM").value;
-        let itemNama = document.getElementById("formNama").value;
-        let itemAngkatan = document.getElementById("formAngkatan").value;
-        let itemJenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
-
-        $('#tabledata tr:last').after(`<tr><td>${itemNIM}</td><td>${itemNama}</td><td>${itemAngkatan}</td><td>${itemJenisKelamin}</td><td></td><td></td><td>Belum</td><td>Belum</td><td><button type="button" class="btn btn-warning btn-sm disabled" style="font-size: 10px;"><b>Belum Disetujui</b></button><button type="button" class="btn btn-success" style="font-size: 15px;">Setujui</button></td><td><button type="button" class="btn btn-info">Edit</button></td></tr>`);
-    
+    function showGenre(item) {
+        document.getElementById("dropdownMenuButton1").innerHTML = "Angkatan " + item.innerHTML;
+        document.getElementById("totalMHSAngkatan").innerHTML = "Total Status Mahasiswa PKL Angkatan "  + item.innerHTML + ":";
+        document.getElementById("totalStatusMHS").style.display = "block";
     }
+
+    function showGenre2(item) {
+        document.getElementById("dropdownMenuButton1").innerHTML = item.innerHTML;
+        document.getElementById("totalMHSAngkatan").innerHTML = "Total Status Mahasiswa PKL "  + item.innerHTML + ":";
+        document.getElementById("totalStatusMHS").style.display = "block";
+    }
+
   </script>
 
 </head>
@@ -68,7 +71,7 @@
                             <div class="card-title">
                                 <div class="row">
                                     <div class="col-9 px-4">
-                                        <h5>Daftar Mahasiswa PKL</h5>
+                                        <h5 id="titleAngkatan">Daftar Mahasiswa PKL</h5>
                                     </div>
                                     <div class="col-3">
                                         <div class="dropdown" style="float: right;">
@@ -76,11 +79,12 @@
                                                 Angkatan
                                             </button>
                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a class="dropdown-item" href="#">2016</a></li>
-                                                <li><a class="dropdown-item" href="#">2017</a></li>
-                                                <li><a class="dropdown-item" href="#">2018</a></li>
-                                                <li><a class="dropdown-item" href="#">2019</a></li>
-                                                <li><a class="dropdown-item" href="#">2020</a></li>
+                                                <li><a class="dropdown-item" id="2016" onclick="showGenre(this)">2016</a></li>
+                                                <li><a class="dropdown-item" id="2017" onclick="showGenre(this)">2017</a></li>
+                                                <li><a class="dropdown-item" id="2018" onclick="showGenre(this)">2018</a></li>
+                                                <li><a class="dropdown-item" id="2019" onclick="showGenre(this)">2019</a></li>
+                                                <li><a class="dropdown-item" id="2020" onclick="showGenre(this)">2020</a></li>
+                                                <li><a class="dropdown-item" id="allAng" onclick="showGenre2(this)">Semua Angkatan</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -88,7 +92,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <table id="tabledatamaster" class="table table-striped" style="border-top: 1px solid #B2D8CA; border-bottom: 1px solid #B2D8CA; table-layout: fixed; width: 100%; font-size: 15px;">
+                            <table id="tabledatamaster" class="table table-striped" style="border: 1px solid #B2D8CA; table-layout: fixed; width: 100%; font-size: 15px;">
                                 <colgroup>
                                     <col span="1" style="width: 20%;">
                                     <col span="1" style="width: 30%;">
@@ -113,8 +117,68 @@
                                         <td>Pria</td>
                                         <td>Belum</td>
                                     </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Belum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24060120140171</td>
+                                        <td>Muhammad Hilmy Tsany</td>
+                                        <td>2020</td>
+                                        <td>Pria</td>
+                                        <td>Selesai</td>
+                                    </tr>
                                 </tbody>
                             </table>
+                            <div class="recap_footer">
+                                <b id="totalMHSAngkatan"></b>
+                                <div id="totalStatusMHS" style="display: none;">
+                                <ul>
+                                    <li>Belum: <?php echo 2 ?></li>
+                                    <li>Proses: <?php echo 13 ?></li>
+                                    <li>Selesai: 0</li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div style="float: right;"><a href="rekap_mahasiswa_pkl.php" style="text-decoration: underline;">Lihat Rekap Semua Angkatan</a></div>
                         </div>
                     </div>
                 </div>
